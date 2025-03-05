@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools >= 40.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image_convolver"
+version = "0.1"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scipy",
+]
+requires-python = ">= 3.8"
+authors = [
+    {name = "R. Menzel"},
+]
+maintainers = [
+    {name = "R. Menzel", email="menzel@gmail.com"}
+]
+description = "Performs 2D convolution on two input 2D datasets."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.scripts]
+image-convolver = "image_convolver.main:cli"
