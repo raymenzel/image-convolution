@@ -26,3 +26,5 @@ if [ ! -f "$output" ]; then
     echo "Error: failed to generate the convolved output image."
     exit 1
 fi
+
+echo "Images generated successfully."
