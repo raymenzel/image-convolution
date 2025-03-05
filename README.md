@@ -66,5 +66,7 @@ and `out.png`:
 
 
 ![dataset1](docs/convolve_raw_0.dat.png)
-![EDP-profile](docs/convolve_raw_1.dat.png)
+
+![dataset2](docs/convolve_raw_1.dat.png)
+
 ![output](docs/out.png)
