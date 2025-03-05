@@ -1,3 +1,5 @@
+"""2D Convolution for input 2D datasets."""
+
 from argparse import ArgumentParser
 
 import matplotlib.pyplot as plt
@@ -6,6 +8,15 @@ from scipy.signal import convolve2d
 
 
 def load_dataset(path):
+    """Read data out of a dataset and put it into a matrix.
+
+    Args:
+        path: Path to the dataset.
+
+    Returns:
+        Numpy 1D arrays of x values and y values and a numpy 2D
+        array of data values.
+    """
     x_values = set()
     y_values = set()
 
@@ -38,6 +49,14 @@ def load_dataset(path):
 
 
 def plot_data(data, path, x=None, y=None):
+    """Plots the data and saves it to an output file.
+
+    Args:
+        data: Numpy 2D array of data values.
+        path: Path to output image.
+        x: Numpy 1D array of x values.
+        y: Numpy 1D array of y values.
+    """
     # Plot the data.
     plt.cla()
     fig, ax = plt.subplots()
@@ -54,6 +73,7 @@ def plot_data(data, path, x=None, y=None):
 
 
 def cli():
+    """Entry point for the image-convolver command line tool."""
     parser = ArgumentParser(description="Performs a 2D convolution of two datasets.")
     parser.add_argument("dataset1", help="A dataset.")
     parser.add_argument("dataset2", help="Another dataset.")
