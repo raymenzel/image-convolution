@@ -4,7 +4,7 @@ Perform 2D convolution of image data
 ## Overview
 Given two 2D datasets, this application calculates their convolution
 using the [scipy.signal.convolv2d function](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.convolve2d.html).
-The datasets must be in form:
+The datasets must be in the form:
 
 ```
 <x value> <y value> <data value>
